@@ -91,7 +91,7 @@
          //alert('Firefox');
     //}
 	
-	function launchIntoFullscreen(element) {
+	function launchintofullscreen(element) {
   if(element.requestFullscreen) {
     element.requestFullscreen();
   } else if(element.mozRequestFullScreen) {
@@ -104,7 +104,7 @@
 }
 
 // Launch fullscreen for browsers that support it!
-launchIntoFullscreen(document.documentElement); // the whole page
+// the whole page
 
 	
 	var url = new URL(window.location.href );
@@ -811,8 +811,9 @@ height: 10vmin;
 <img src="https://i.postimg.cc/pTHc5M9R/Photo-1549212152436.png" style="
     height: 100%;
 "></a>
+<A onclick="launchintofullscreen(document.documentElement);">full</a>
    <a onclick="
-	       
+	      
 	       panel_menu();scrollSmoothTo('Products'); return false;">Shop</a>
 	<a onclick="panel_menu();scrollSmoothTo('FAQ');; return false;" class=" active active">About</a>
    <a hredf="/about.html" href="#basket_link" style="display:none;color:yellow;font-weight:bold;" onclicdk="document.getElementById('basket_form').style.display='';">My Basket    <font id="bassket_count_menu" style="font-weight:bold;z-index: 2000; background: greeen;font-size: 12px;border-radius: 22px;border: 2px solid black; background: lightblue;color:black">0</font> items</a>
