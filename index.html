@@ -109,6 +109,15 @@ var redirect = url.searchParams.get("redirect");
 		
 	}
 	
+	function put_discount_price(price){
+	    document.getElementById("discount_price").innerHTML = price;
+		
+		 
+		
+		
+		
+	}
+	
 	function put_shipping_price(price){
 	    document.getElementById("shipping_price").innerHTML = price;
 		
@@ -2426,7 +2435,7 @@ foent-size: 14px;
 font-size: 3vmin;" id="basket_contents"></div>
 
 	  
-	subtotal:  <div style="
+	<div style="
     /* margin-top: 5vmin; */
     /* margin-bottom: 5vmin; */
     font-size: 40px;
@@ -2436,7 +2445,7 @@ font-size: 3vmin;" id="basket_contents"></div>
     margin: 5vmin auto;
 " id="subtotal"></div>
 	
-shipping:	<div style="
+<div style="
     /* margin-top: 5vmin; */
     /* margin-bottom: 5vmin; */
     font-size: 40px;
@@ -2445,8 +2454,18 @@ shipping:	<div style="
     width: 100%;
     margin: 5vmin auto;
 " id="shipping_price"></div>
+	  
+	  <div style="
+    /* margin-top: 5vmin; */
+    /* margin-bottom: 5vmin; */
+    font-size: 40px;
+    font-size: 6.2vmin;
+    font-weight: bold;
+    width: 100%;
+    margin: 5vmin auto;
+" id="discount_price"></div>
 	
-grand total:	<div style="
+<div style="
     /* margin-top: 5vmin; */
     /* margin-bottom: 5vmin; */
     font-size: 40px;
