@@ -1403,8 +1403,8 @@ This guarantees a consistent, pure, great tasting premium product that contains 
 					<BR><B>DIRECTIONS FOR USE:</b> Drop Under Your Tongue , And Hold For 1-2 Minutes, One Drop of The 500MG CBD Oil Delivers 25MG Of CBD For Example. Allow The CBD To Be Fully Absorbed Before Swallowing.
 <br>
 <br>
-                                    <b>INGREDIENTS:</b> 100% Cannabis Sativa L , 0% THC
-                                        <br>
+                                    <b>INGREDIENTS:</b 100% Cannabis Sativa L , 0% THC
+                                        <br>c
 					<b>Weight: </b>10ml
 
                                         <b>Volume: </b>10ml  <b>SKU: </b>CBDSC1
@@ -2475,7 +2475,7 @@ font-size: 4vmin;" id="basket_contents"></div>
 	
 	  
 	  
-<select name="shipping_zones" id="shipping_zones" style="display:none;font-size:5vmin;font-weight:bold;text-align:center;padding: 1vmin;border: 1vmin solid greenyellow;width:95%;martgin-left:2.5%">
+<select name="shipping_zones" id="shipping_zones" style="displaty:none;font-size:5vmin;font-weight:bold;text-align:center;padding: 1vmin;border: 1vmin solid greenyellow;width:95%;martgin-left:2.5%">
 	<option value="_">Please Enter Shipping Country</option>
 	<option value="Abu Dhabi_1">Abu Dhabi</option>
 	<option value="Afghanistan_1">Afghanistan</option>
@@ -3932,9 +3932,8 @@ function load_external_java(script_name){var head= document.getElementsByTagName
 	    
         var timeStamp = Math.floor(Date.now());
 	    
-	   // var e = document.getElementById("shipping_zones");
-var shipping_zones_value = "United Kingdom_Europe";
-//var text = e.options[e.selectedIndex].text;
+	    var e = document.getElementById("shipping_zones");
+var shipping_zones_value  e.options[e.selectedIndex].value;
 	    
 
     var url = "https://erespace.atspace.tv/astockman/stock.php?&t="+timeStamp+"&cart_id="+basket_idz+"&discount="+document.getElementById("discount_code").value+"&shipping_zone="+shipping_zones_value;
