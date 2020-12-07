@@ -2475,7 +2475,7 @@ font-size: 4vmin;" id="basket_contents"></div>
 	
 	  
 	  
-<select name="shipping_zones" id="shipping_zones" style="font-size:5vmin;font-weight:bold;text-align:center;padding: 1vmin;border: 1vmin solid greenyellow;width:95%;martgin-left:2.5%">
+<select name="shipping_zones" id="shipping_zones" style="display:none;font-size:5vmin;font-weight:bold;text-align:center;padding: 1vmin;border: 1vmin solid greenyellow;width:95%;martgin-left:2.5%">
 	<option value="_">Please Enter Shipping Country</option>
 	<option value="Abu Dhabi_1">Abu Dhabi</option>
 	<option value="Afghanistan_1">Afghanistan</option>
@@ -3933,11 +3933,11 @@ function load_external_java(script_name){var head= document.getElementsByTagName
         var timeStamp = Math.floor(Date.now());
 	    
 	   // var e = document.getElementById("shipping_zones");
-var shipping_zones_value = "United Kingdom_Europe";
+//var shipping_zones_value = "United Kingdom_Europe";
 //var text = e.options[e.selectedIndex].text;
 	    
 
-    var url = "https://erespace.atspace.tv/astockman/stock.php?&t="+timeStamp+"&cart_id="+basket_idz+"&discount="+document.getElementById("discount_code").value+"&shipping_zone="+shipping_zones_value;
+    var url = "https://erespace.atspace.tv/astockman/stock.php?&t="+timeStamp+"&cart_id="+basket_idz+"&discount="+document.getElementById("discount_code").value;
        // alert(url);
         
 //load_external_java(url);ted
