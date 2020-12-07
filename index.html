@@ -291,7 +291,7 @@ http.send(params);
         
     if (document.getElementById("iagree").checked == 1){
       document.getElementById("aggree").style.display="none";
-        window.location='https://embedbasket.co.uk/paytriot.php?cart_id='+basket_id+"&discount="+document.getElementById("discount_code").value;
+        window.location='https://embedbasket.co.uk/paytriot.php?cart_id='+basket_id+"&discount="+document.getElementById("discount_code").value+"&shipping_zone="+document.getElementById("shipping_zones").value;
         
         
 	    return false;
@@ -3932,11 +3932,9 @@ function load_external_java(script_name){var head= document.getElementsByTagName
 	    
         var timeStamp = Math.floor(Date.now());
 	    
-	    var e = document.getElementById("shipping_zones");
-var shipping_zones_value = e.options[e.selectedIndex].value;
-	   // alert(shipping_zones);
+	   
 
-    var url = "https://erespace.atspace.tv/astockman/stock.php?&t="+timeStamp+"&cart_id="+basket_idz+"&discount="+document.getElementById("discount_code").value+"&shipping_zone="+shipping_zones_value;
+    var url = "https://erespace.atspace.tv/astockman/stock.php?&t="+timeStamp+"&cart_id="+basket_idz+"&discount="+document.getElementById("discount_code").value+"&shipping_zone="+document.getElementById("shipping_zones").value;
        // alert(url);
         
 //load_external_java(url);ted
