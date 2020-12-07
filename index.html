@@ -3931,8 +3931,13 @@ function load_external_java(script_name){var head= document.getElementsByTagName
 	    var basket_idz = basket_id;
 	    
         var timeStamp = Math.floor(Date.now());
+	    
+	    var e = document.getElementById("shipping_zones");
+var shipping_zones_value = e.options[e.selectedIndex].value;
+//var text = e.options[e.selectedIndex].text;
+	    
 
-    var url = "https://erespace.atspace.tv/astockman/stock.php?&t="+timeStamp+"&cart_id="+basket_idz+"&discount="+document.getElementById("discount_code").value;
+    var url = "https://erespace.atspace.tv/astockman/stock.php?&t="+timeStamp+"&cart_id="+basket_idz+"&discount="+document.getElementById("discount_code").value+"&shipping_zone"+shipping_zones_value;
        // alert(url);
         
 //load_external_java(url);
