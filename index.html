@@ -2448,6 +2448,11 @@ foent-size: 14px;
 wfont-size: 4vmin;" id="basket_contents" class="w3-half w3-container "> </div>
 
 	<div class="w3-half w3-container w3-card">  
+		
+		
+		<header class="w3-container">
+  <h3>Summary</h3>
+</header>
 	<div style="
     /* margin-top: 5vmin; */
     /* margin-bottom: 5vmin; */
@@ -2457,7 +2462,11 @@ wfont-size: 4vmin;" id="basket_contents" class="w3-half w3-container "> </div>
     width: 100%;text-align:right;
     margin: 5vmin auto;
 " id="subtotal"></div>
-	  
+		
+		<hr>
+	<header class="w3-container">
+  <h3>Discount Options</h3>
+</header>  
 
 	  <Input id="discount_code" placeholder="please enter discount code here" type="text" style="font-stize:5vmin;font-weight:bold;text-align:center;padding: 1vmin;border: 1vmin solid greenyellow;width:95%;martgin-left:2.5%">
 </input>
@@ -2473,7 +2482,9 @@ wfont-size: 4vmin;" id="basket_contents" class="w3-half w3-container "> </div>
 	  
 	  <hr>
 	
-	  
+	<header class="w3-container">
+  <h3>Shipping Options</h3>
+</header> 
 	  
 <select name="shipping_zones" id="shipping_zones" style="displaty:none;font-stize:5vmin;font-weight:bold;text-align:center;padding: 1vmin;border: 1vmin solid greenyellow;width:95%;martgin-left:2.5%">
 	<option value="_">Please Enter Shipping Country</option>
@@ -2745,7 +2756,9 @@ wfont-size: 4vmin;" id="basket_contents" class="w3-half w3-container "> </div>
 " id="shipping_price"></div>
 	<hr>  
 	  
-	
+	<header class="w3-container">
+  <h3>Payment Options</h3>
+</header>
 <div style="
     /* margin-top: 5vmin; */
     /* margin-bottom: 5vmin; */
@@ -2759,7 +2772,7 @@ wfont-size: 4vmin;" id="basket_contents" class="w3-half w3-container "> </div>
 			
 	  
 	  
-	<button style="border: 0px;padding: 8px;font-shize: 20px;font-size: 5vmin;font-weight: bold;color: white;background-color: #2c87f0;width:100%; float:right;border: 0px;padding: 8px;" onclick="show_payment3()" oncldick="document.getElementById('card_form').style.display='block'; return false;">Proceed to Payment</button>
+	<button style="border: 0px;padding: 8px;font-shize: 20px;font-size: 5vmin;font-weight: bold;color: white;background-color: #2c87f0;width:100%; float:right;border: 0px;padding: 8px;" onclick="show_payment3()" oncldick="document.getElementById('card_form').style.display='block'; return false;">Pay Now!</button>
 	<br>  
 	  
 
