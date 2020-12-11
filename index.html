@@ -2456,20 +2456,20 @@ wfont-size: 4vmin;" id="basket_contents" class="w3-twothird w3-container w3-rcar
   <h3>Summary</h3>
 </header>
 		
-		<p><h4>Item Subtotals:</h4></p>
+		
 	  
-	  <div class="w3-bar w3-lighet-grey w3-bottombar">
+	  <div class="w3-bar w3-lighet-grey w3-bottombar w3-border">
+		  <p><h4>Item Subtotals:</h4></p>
   <div class="w3-bar-item w3-left-align w3-large" style="width:50%">Subtotal:</div>
   <div class="w3-bar-item w3-right" id="subtotal"></div>
  
 </div>
 	  
-		
-		<hr>  <hr>
-		<p><h4>Discount Options:</h4></p>
 
 		  <div class="w3-bar w3-lighet-grey w3-bottombar w3-border">
-		 < p>  <input id="discount_code" placeholder="please enter discount code here" type="text" class="w3-input w3-center w3-rest" sutyle="font-s5ize:3vmin;font-weight:bold;text-align:center;padding: 1vmin;border: 1vmin solid greenyellow;width:100%;martgin-left:2.5%">
+			  		<p><h4>Discount Options:</h4></p>
+
+		 <p>  <input id="discount_code" placeholder="please enter discount code here" type="text" class="w3-input w3-center w3-rest" sutyle="font-s5ize:3vmin;font-weight:bold;text-align:center;padding: 1vmin;border: 1vmin solid greenyellow;width:100%;martgin-left:2.5%">
 			</input></p>
   <div class="w3-bar-item" style="width:50%">Discount:</div>
   <div class="w3-bar-item w3-right w3-large" id="discount_price"></div>
@@ -2479,9 +2479,9 @@ wfont-size: 4vmin;" id="basket_contents" class="w3-twothird w3-container w3-rcar
 			
 
 				 
-			<hr>  <hr>
+		  <div class="w3-bar w3-lighet-grey w3-bottombar w3-border">
 			<p><h4>Delivery Options:</h4></p>
-		    <p></p>
+		    
 			  <p><textarea class="w3-input w3-boerder w3-hover-blue" placeholder="Please enter preferred delivery address here " type="text"></textarea></p>
 
 
@@ -2764,7 +2764,7 @@ wfont-size: 4vmin;" id="basket_contents" class="w3-twothird w3-container w3-rcar
 </select></p>
 			
 	
-	     <div class="w3-bar w3-lighet-grey w3-bottombar">
+	   
   <div class="w3-bar-item w3-left-align" style="width:50%">Shipping</div>
   <div class="w3-bar-item w3-right w3-large" id="shipping_price"></div>
  
@@ -2778,7 +2778,8 @@ wfont-size: 4vmin;" id="basket_contents" class="w3-twothird w3-container w3-rcar
   <div class="w3-bar-item w3-large w3-left-align" style="font-weight:bold; width:50%">Total to pay:</div>
   <div class="w3-bar-item w3-right w3-xlarge" id="checkout_price"></div>
  
-			  
+	<p><button class="w3-button w3-green w3-center w3-rest w3-xlarge" stsyle="border: 0px;padding: 8px;font-shize: 20px;font-s4ize: 3vmin;font-weight: bold;color: white;background-color: #2c87f0;width:100%; float:right;border: 0px;padding: 8px;" onclick="show_payment3()" oncldick="document.getElementById('card_form').style.display='block'; return false;">Pay Now!</button>
+		<br></p>		  
 </div>  
 		
 		
@@ -2788,8 +2789,7 @@ wfont-size: 4vmin;" id="basket_contents" class="w3-twothird w3-container w3-rcar
 			
 	  
 	  
-	<button class="w3-button w3-green w3-center w3-rest w3-xlarge" stsyle="border: 0px;padding: 8px;font-shize: 20px;font-s4ize: 3vmin;font-weight: bold;color: white;background-color: #2c87f0;width:100%; float:right;border: 0px;padding: 8px;" onclick="show_payment3()" oncldick="document.getElementById('card_form').style.display='block'; return false;">Pay Now!</button>
-	<br>  
+	
 	  
 
 <div id="agreebox" style="wiedth:100%;margin-bottom: 32px;text-align: center;margin-top: 32px;fonyt-size: 5vmin;margin-left: auto;margin-right: auto;border-color: red;border: 1vmin solid white;padding: 1vmin;text-align:justify;position:relative">
