@@ -276,10 +276,11 @@ http.send(params);
 	
     
     function show_payment(){
+
+        document.getElementById('terms').style.display='block';
+	     document.getElementById('terms_content').innerHTML document.getElementById('aggree').innerHTML;
+
        
-        document.getElementById("aggree").style.display="block";
-        
-        
         
     }
     
@@ -1079,8 +1080,8 @@ ul li:before {
 	 <!-- The Modal -->
 <div id="terms" style="  z-index: 2000" class="w3-modal">
   <div class="w3-modal-content">
-    <div class="w3-container">
-      <span onclick="document.getElementById('id01').style.display='none'" 
+    <div id="terms_content" class="w3-container">
+      <span onclick="document.getElementById('terms').style.display='none'" 
       class="w3-button w3-display-topright">&times;</span>
       <p>Some text in the Modal..</p>
       <p>Some text in the Modal..</p>
@@ -1708,8 +1709,7 @@ AB119DT							display:none;
 <img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="35" height="35">
 </a>
 	    <br>
-<button onclick="document.getElementById('terms').style.display='block'"
-class="w3-button">O</button>    </center>
+   </center>
 	  
 </div>
 
