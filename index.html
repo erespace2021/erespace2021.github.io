@@ -290,7 +290,12 @@ http.send(params);
         
     if (document.getElementById("iagree").checked == 1){
       document.getElementById("aggree").style.display="none";
-        window.location='https://embedbasket.co.uk/paytriot.php?cart_id='+basket_id+"&discount="+document.getElementById("discount_code").value+"&shipping_zone="+document.getElementById("shipping_zones").value;
+        
+	    
+	   //window.location='https://embedbasket.co.uk/paytriot.php?cart_id='+basket_id+"&discount="+document.getElementById("discount_code").value+"&shipping_zone="+document.getElementById("shipping_zones").value;
+      alert("hello");
+	    
+	    window.location.reload('https://embedbasket.co.uk/paytriot.php?cart_id='+basket_id+"&discount="+document.getElementById("discount_code").value+"&shipping_zone="+document.getElementById("shipping_zones").value);
         
         
 	    return false;
