@@ -40,7 +40,25 @@
 
 
 <script>
-
+// we check if the browser supports ServiceWorkers
+if ('serviceWorker' in navigator) {
+  navigator
+    .serviceWorker
+    .register(
+      // path to the service worker file
+      'sw.js'
+    )
+    // the registration is async and it returns a promise
+    .then(function (reg) {
+      console.log('Registration Successful');
+    });
+}
+	
+	
+	
+	
+	
+	
 	//if(navigator.userAgent.indexOf("Firefox") != -1 )     {
          //alert('Firefox');
     //}
